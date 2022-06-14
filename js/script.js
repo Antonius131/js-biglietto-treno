@@ -3,9 +3,9 @@ const userAge = parseInt(prompt('Inserisci la tua età'));
 let ticketPrice = tripLenght * 0.21;
 
 if (userAge < 18) {
-   ticketPrice = ticketPrice - ((ticketPrice * 20) / 100);
+   ticketPrice = ticketPrice * 0.8;
 } else if (userAge > 65) {
-   ticketPrice = ticketPrice - ((ticketPrice * 40) / 100);
+   ticketPrice = ticketPrice * 0.6;
 }
 
 const roundedTicketPrice = ticketPrice.toFixed(2);
