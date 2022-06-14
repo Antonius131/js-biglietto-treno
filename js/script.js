@@ -4,12 +4,9 @@ let ticketPrice = tripLenght * 0.21;
 
 if (userAge < 18) {
    ticketPrice = ticketPrice - ((ticketPrice * 20) / 100);
-}
-
-if (userAge > 65) {
+} else if (userAge > 65) {
    ticketPrice = ticketPrice - ((ticketPrice * 40) / 100);
 }
-
 
 const roundedTicketPrice = ticketPrice.toFixed(2);
 console.log (roundedTicketPrice);
